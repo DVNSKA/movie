@@ -14,7 +14,7 @@ const MovieList = () => {
 
   const fetchSampleNames = async () => {
     try {
-      const response = await axios.get(`http://localhost:2000/api/samples/${email}`);
+      const response = await axios.get(`https://movie-d9k1.onrender.com/api/samples/${email}`);
       setSampleNames(response.data.map(sample => sample.name));
     } catch (error) {
       console.error(error);
@@ -23,7 +23,7 @@ const MovieList = () => {
 
   const handleAddToList = async () => {
     try {
-      await axios.post('http://localhost:2000/api/lists', {
+      await axios.post('https://movie-d9k1.onrender.com/api/lists', {
         email,
         movieName,
         listName: selectedSample

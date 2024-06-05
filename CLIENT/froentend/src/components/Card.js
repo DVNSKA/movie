@@ -12,7 +12,7 @@ const Card = () => {
 
   const fetchMovieData = async () => {
     try {
-      const response = await axios.get(`http://localhost:2000/api/lists/${email}`);
+      const response = await axios.get(`https://movie-d9k1.onrender.com/api/lists/${email}`);
       const filteredList = response.data.filter(item => item.listName === sampleName);
       
       if (filteredList.length > 0) {
