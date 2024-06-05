@@ -18,7 +18,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:2000/api/users/signup', formData);
+      const response = await axios.post('https://movie-d9k1.onrender.com/api/users/signup', formData);
       console.log(response.data);
       navigate('/'); // Navigate to home after successful signup
     } catch (error) {

@@ -12,7 +12,7 @@ const Movie = () => {
   const [movieData, setMovieData] = useState(null);
   const [sampleNames, setSampleNames] = useState([]);
   const fetchSampleNames = async () => {
-    const x='http://localhost:2000/api/samples/'+email;
+    const x='https://movie-d9k1.onrender.com/api/samples/'+email;
     console.log(x);
     try {
       const response = await axios.get(x);
@@ -37,7 +37,7 @@ const Movie = () => {
 
   const addSample = async (name) => {
     try {
-      const response = await axios.post('http://localhost:2000/api/samples', {
+      const response = await axios.post('https://movie-d9k1.onrender.com/api/samples', {
         name,
         email // Use the email from the URL
       });
