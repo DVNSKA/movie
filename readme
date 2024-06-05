@@ -1,0 +1,12 @@
+i used mongoodb and express for backend and react-router-dom and react for froentend 
+
+
+-> first navigate console to Api  and type nodemon server.js
+it will run our backend server in locolhost:2000 
+you can see running in 2000 and connected in console
+
+
+
+then in new console
+->navigate to froentend that is under client then type npm run start 
+it will start our froentend code in locolhost:3000
